@@ -1,7 +1,7 @@
 <?php
 /*
 ===========================================================================================================
-One Ark - functions.php
+One ARK - functions.php
 ===========================================================================================================
 This is the most generic template file in a WordPress theme and is one of the two required files for a 
 theme (the other being template-tags.php). This functions.php template file allows you to add features and 
@@ -9,7 +9,7 @@ functionality to a WordPress theme which is stored in the theme's sub-directory 
 second template file template-tags.php allows you to add additional features and functionality to the 
 WordPress theme which is stored in the includes folder and it's called in the functions.php.
 
-@package        One Ark WordPress Theme
+@package        One ARK WordPress Theme
 @copyright      Copyright (C) 2018. Benjamin Lu
 @license        GNU General Public License v2 or later (http://www.gnu.org/licenses/gpl-2.0.html)
 @author         Benjamin Lu (https://www.getbenonit.com/)
@@ -58,7 +58,7 @@ add_action('after_setup_theme', 'one_ark_theme_setup');
 function one_ark_enqueue_scripts_and_styles_setup() {
     /*
     =======================================================================================================
-    Enable and activate the main stylesheet and custom stylesheet if available for Perfect Choice WordPress 
+    Enable and activate the main stylesheet and custom stylesheet if available for One ARK WordPress 
     Theme. The main stylesheet should be enqueued rather than using @import.
     =======================================================================================================
     */
@@ -67,7 +67,7 @@ function one_ark_enqueue_scripts_and_styles_setup() {
 
     /*
     =======================================================================================================
-    Enable and activate Google Fonts (Sanchez and Merriweather) locally for Perfect Choice WordPress Theme. 
+    Enable and activate Google Fonts (Sanchez and Merriweather) locally for One ARK WordPress Theme. 
     For more information regarding this feature, please go the following url to begin the awesomeness of 
     Google WebFonts Helper. 
     Reference: (https://google-webfonts-helper.herokuapp.com/fonts)
@@ -77,7 +77,7 @@ function one_ark_enqueue_scripts_and_styles_setup() {
 
     /*
     =======================================================================================================
-    Enable and activate Font Awesome 4.7 locally for Perfect Choice WordPress Theme. For more information about 
+    Enable and activate Font Awesome 4.7 locally for One ARK WordPress Theme. For more information about 
     Font Awesome, please navigate to the URL for more information. 
     Reference: (http://fontawesome.io/)
     =======================================================================================================
@@ -86,7 +86,7 @@ function one_ark_enqueue_scripts_and_styles_setup() {
 
     /*
     ===========================================================================================================
-    Enable and activate (JavaScript/JQuery) to support Navigation Menu for Primary Navigation for Perfect Choice 
+    Enable and activate (JavaScript/JQuery) to support Navigation Menu for Primary Navigation for One ARK 
     WordPress Theme. This allows you to use click feature for dropdowns and multiple depths, When using this new 
     feature of the navigation. The Menu for mobile side is now at the 
     bottom of the page.

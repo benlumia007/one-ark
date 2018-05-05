@@ -1,12 +1,12 @@
 <?php
 /*
 ===============================================================================================================
-One Ark - custom-header.php
+One ARK - custom-header.php
 ===============================================================================================================
 This is trhe most generic template file in a WodPress theme and is one of the requirements to set custom header 
 image and styling for the header. 
 
-@package        One Ark WordPress Theme
+@package        One ARK WordPress Theme
 @copyright      Copyright (C) 2018. Benjamin Lu
 @license        GNU General Public License v2 or later (http://www.gnu.org/licenses/gpl-2.0.html)
 @author         Benjamin Lu (https://www.getbenonit.com/)
