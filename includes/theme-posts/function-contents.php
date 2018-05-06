@@ -69,6 +69,14 @@ function one_ark_content_single_setup() { ?>
 }
 
 function one_ark_content_page_setup() { ?>
-
+    <section id="global-layout" class="<?php echo esc_attr(get_theme_mod('global_layout', 'right-sidebar')); ?>">
+        <div id="content-area" class="content-area">
+                <?php while (have_posts()) : the_post(); ?>
+                    <?php get_template_part('template-parts/content', 'page'); ?>
+            <?php endwhile; ?>
+            <?php comments_template(); ?>
+        </div>
+        <?php get_sidebar(); ?>
+    </section>
 <?php
 }

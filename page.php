@@ -18,10 +18,10 @@ template files, WordPress may have default files or functions to perform their j
 ?>
 <?php get_header(); ?>
     <?php if ('left-sidebar' == get_theme_mod('global_layout', 'left-sidebar')) { ?>
-        <?php one_ark_content_single_setup(); ?>
+        <?php one_ark_content_page_setup(); ?>
     <?php } else if ('right-sidebar' == get_theme_mod('global_layout', 'right-sidebar')) { ?>
-        <?php one_ark_content_single_setup(); ?>
+        <?php one_ark_content_page_setup(); ?>
     <?php } else { ?>
-        <?php one_ark_content_single_setup(); ?>
+        <?php one_ark_content_page_setup(); ?>
     <?php } ?> 
 <?php get_footer(); ?>
