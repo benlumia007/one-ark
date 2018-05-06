@@ -15,9 +15,11 @@ or index.
 */
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-    <div class="post-thumbnail">
-        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('one-ark-medium-thumbnails'); ?></a>
-    </div>
+    <?php if (has_post_thumbnail()) { ?>
+        <div class="entry-post-thumbnail">
+            <?php the_post_thumbnail('one-ark-medium-thumbnails'); ?>
+        </div>
+    <?php } ?>
     <header class="entry-header">
         <?php the_title(sprintf('<h1 class="entry-title"><a href="%s">', esc_url(get_permalink())), '</a></h1>'); ?>
         <span class="entry-timestamp"><?php echo one_ark_entry_time_stamp_setup(); ?></span>

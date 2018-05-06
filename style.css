@@ -112,9 +112,11 @@ h6 {
  2.0 - Elements
 ===========================================================================================================
 */
+figure,
 img {
     height: auto;
     max-width: 100%;
+    margin: 0;
 }
 
 /*
@@ -190,7 +192,11 @@ img {
 .site-content:before,
 .site-content:after,
 .post-navigation:before,
-.post-navigation:after {
+.post-navigation:after,
+.entry-content:before,
+.entry-content:after,
+.entry-excerpt:before,
+.entry-excerpt:after {
     clear: both;
     content: "";
     display: table;
@@ -215,6 +221,11 @@ img {
 a {
     color: #111111;
     text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    color: #6c6c8c;
 }
 
 /*
@@ -362,7 +373,7 @@ a {
 
 .menu-toggle {
 	background-color: #000;
-	border: solid 2px #fff;
+	border: solid 0.125em #fff;
 	bottom: 1em;
 	color: #fff;
     display: none;
@@ -594,6 +605,10 @@ a {
     padding: 0.5em 1em;
 }
 
+.content-area .entry-post-thumbnail {
+    margin-bottom: 0.5em;
+}
+
 .updated:not(.published) {
     display: none;
 }
@@ -618,8 +633,12 @@ a {
     font-size: 0.750em;
 }
 
-.sticky {
-
+.sticky::before {
+    content: "\f08d";
+    float: left;
+    font-family: 'FontAwesome';
+    font-size: 2.125em;
+    margin-right: 0.4em;
 }
 
 /*
@@ -660,7 +679,7 @@ a {
 }
 
 .comment-author .avatar {
-    border: 4px solid #cccccc;
+    border: 0.250em solid #cccccc;
     border-radius: 50%;
     float: left; 
     display: block;
@@ -963,7 +982,7 @@ p.comment-awaiting-moderation {
 }
 
 .rssSummary {
-    margin-top: 10px;
+    margin-top: 0.625em;
 }
 
 #wp-calendar table {
@@ -992,7 +1011,7 @@ p.comment-awaiting-moderation {
 #wp-calendar {
     border: 0.063em solid #cccccc;
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 1.250em;
     text-align: center;
     width: 100%;
 }
@@ -1004,7 +1023,7 @@ p.comment-awaiting-moderation {
 
 #wp-calendar caption {
     font-weight: 700;
-    margin: 5px 0;
+    margin: 0.313em 0;
     text-align: center;
 }
 
@@ -1066,7 +1085,9 @@ p.comment-awaiting-moderation {
 
 .wp-caption .wp-caption-text,
 .gallery-caption {
-    background: #666666;
+    background: #999999;
+    color: #111111;
+    font-size: 0.875em;
     padding: 0.313em;
     text-align: center;
 }
@@ -1140,25 +1161,6 @@ p.comment-awaiting-moderation {
     .right-sidebar .widget-area {
         float: none;
         margin-top: 1.125em;
-        width: 100%;
-    }
-    
-    .jetpack-portfolio-grid li {
-        list-style: none;
-        float: none;
-        margin: 0;
-        padding: 0.5em;
-        width: 100%;
-    }
-    
-    .blog-grid li {
-        float: none;
-        margin-bottom: 1.125em;
-        width: 100%;
-    }
-    
-    .contact-grid li {
-        float: none;
         width: 100%;
     }
 }
@@ -1237,7 +1239,7 @@ p.comment-awaiting-moderation {
 	
 	/* Add an outline to the drop-down menus */
 	.primary-navigation ul ul {
-		outline: 1px solid #333;
+		outline: 0.063em solid #333;
 	}
 	
 	/* Left-align drop-down menu items */
