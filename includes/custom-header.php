@@ -71,7 +71,7 @@ function one_ark_custom_header_setup() {
         'header-image' => array(
             'url'           => '%s/images/header-image.jpg',
             'thumbnail_url' => '%s/images/header-image.jpg',
-            'description'   => esc_html__( 'Header Image', 'perfect-choice')
+            'description'   => esc_html__( 'Header Image', 'one-ark')
     )));
 }
 add_action('after_setup_theme', 'one_ark_custom_header_setup');

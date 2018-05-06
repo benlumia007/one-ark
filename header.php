@@ -45,6 +45,6 @@ WordPress may have default files or functions to perform their jobs.
         </section>
     </header>
     <div id="site-header-image" class="site-header-image">
-        <img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>">
+        
     </div>
     <section id="site-content" class="site-content">
