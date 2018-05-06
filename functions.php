@@ -67,6 +67,20 @@ function one_ark_theme_setup() {
 
     /*
     ===========================================================================================================
+    Enable and activate add_theme_support('html5'); for Perfect Choice WordPress Theme. This feature allows the 
+    use of HTML5 markup for search forms, comment forms, comment list, gallery, and captions.
+    ===========================================================================================================
+    */
+    add_theme_support('html5', array(
+        'comment-list', 
+        'comment-form', 
+        'search-form', 
+        'gallery', 
+        'caption'
+    ));
+
+    /*
+    ===========================================================================================================
     Enable and activate add_theme_support('post-thumbnails); for Perfect Choice WordPress Theme. This feature 
     enables Post Thumbnails (Featured Images) support for a theme. If you wish to display thumbnails, use the 
     following to display the_post_thumbnail();. If you need to to check of there is a post thumbnail, then use 

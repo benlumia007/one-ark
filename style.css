@@ -1,5 +1,5 @@
 /*
-Theme Name:  One Ark
+Theme Name:  One ARK
 Author: Benjamin Lu
 Description: One Ark is a fully functional mobile friendly WordPress theme that allows you to create amazing things.
 License: GNU General Public License v2 or later
@@ -634,14 +634,11 @@ a {
 ===========================================================================================================
 */
 .comments-area {
-    background: #2c2c2c;
-    border: 0.063em solid #cccccc;
-    margin: 0.938em 0;
-    padding: 1.125em;    
+    margin: 0.938em 0;   
 }
 
 .comments-title {
-    color: #ffffff;
+    color: #111111;
     margin: 0 0 1.125em 0;
     text-align: center;
 }
@@ -749,7 +746,7 @@ ol.children {
 }
 
 .comment-reply-title {
-    color: #ffffff;
+    color: #111111;
     font-size: 1.250em;
     margin: 0;
     padding: 0;
@@ -762,12 +759,11 @@ ol.children {
 
 .required {
     color: #FF0000;
-    font-size: 10.625em;
 }
 
 .comment-awaiting-moderation {
     background: #84BD68;
-    color: #ffffff;
+    color: #111111;
     font-size: 0.750em;
     padding: 0.188em 0.250em;
 }
@@ -781,9 +777,10 @@ ol.children {
 .comment-form .comment-form-author label,
 .comment-form .comment-form-email label,
 .comment-form .comment-form-url label {
-    color: #ffffff;
+    color: #111111;
     display: block;
     font-weight: 700;
+    margin-bottom: 0.2em
 }
 
 .comment-form .comment-form-comment textarea {
